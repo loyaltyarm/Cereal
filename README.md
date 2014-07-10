@@ -1,6 +1,6 @@
 # Cereal
 
-![Cereal icon](/Users/loyaltyarm/Desktop/cereal.icns)
+![Cereal icon](http://i.imgur.com/zdqDm5u.png)
 
 ## Overview
 **Cereal** is a lightweight iOS app to create a scannable serial number QR code for fast internal data entry of iOS devices in your organization.
