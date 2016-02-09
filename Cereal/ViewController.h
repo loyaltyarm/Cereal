@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *serialLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *barCodeImage;
+@property (strong, nonatomic) NSString *qrString;
+@property (nonatomic, readonly) NSString *serialNumber;
+
 @end

@@ -26,7 +26,7 @@
 				CFTypeRef platformSerialNumber = IORegistryEntryCreateCFProperty(platformExpertDevice, CFSTR("IOPlatformSerialNumber"), kCFAllocatorDefault, 0);
 				if (CFGetTypeID(platformSerialNumber) == CFStringGetTypeID())
 				{
-					serialNumber = [NSString stringWithString:(NSString*)platformSerialNumber];
+					serialNumber = [NSString stringWithString:(__bridge NSString*)platformSerialNumber];
 					CFRelease(platformSerialNumber);
 				}
 				IOObjectRelease(platformExpertDevice);

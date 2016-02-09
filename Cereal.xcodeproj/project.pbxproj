@@ -22,6 +22,7 @@
 		AA3A99A8196E62DF009102A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3A9987196E62DF009102A1 /* UIKit.framework */; };
 		AA3A99B0196E62DF009102A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3A99AE196E62DF009102A1 /* InfoPlist.strings */; };
 		AA3A99B2196E62DF009102A1 /* CerealTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A99B1196E62DF009102A1 /* CerealTests.m */; };
+		AA3A99BD196E6477009102A1 /* UIDevice+serialNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3A99BC196E6477009102A1 /* UIDevice+serialNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		AA3A99AD196E62DF009102A1 /* CerealTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CerealTests-Info.plist"; sourceTree = "<group>"; };
 		AA3A99AF196E62DF009102A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA3A99B1196E62DF009102A1 /* CerealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CerealTests.m; sourceTree = "<group>"; };
+		AA3A99BB196E6477009102A1 /* UIDevice+serialNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+serialNumber.h"; sourceTree = "<group>"; };
+		AA3A99BC196E6477009102A1 /* UIDevice+serialNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+serialNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		AA3A9989196E62DF009102A1 /* Cereal */ = {
 			isa = PBXGroup;
 			children = (
+				AA3A99BB196E6477009102A1 /* UIDevice+serialNumber.h */,
+				AA3A99BC196E6477009102A1 /* UIDevice+serialNumber.m */,
 				AA3A9992196E62DF009102A1 /* AppDelegate.h */,
 				AA3A9993196E62DF009102A1 /* AppDelegate.m */,
 				AA3A9995196E62DF009102A1 /* Main_iPhone.storyboard */,
@@ -202,6 +207,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = loyaltyarm;
 				TargetAttributes = {
+					AA3A997F196E62DF009102A1 = {
+						DevelopmentTeam = 586QG72W7J;
+					};
 					AA3A99A3196E62DF009102A1 = {
 						TestTargetID = AA3A997F196E62DF009102A1;
 					};
@@ -253,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3A99BD196E6477009102A1 /* UIDevice+serialNumber.m in Sources */,
 				AA3A999D196E62DF009102A1 /* ViewController.m in Sources */,
 				AA3A9994196E62DF009102A1 /* AppDelegate.m in Sources */,
 				AA3A9990196E62DF009102A1 /* main.m in Sources */,
@@ -390,10 +399,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cereal/Cereal-Prefix.pch";
 				INFOPLIST_FILE = "Cereal/Cereal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +415,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cereal/Cereal-Prefix.pch";
 				INFOPLIST_FILE = "Cereal/Cereal-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +485,7 @@
 				AA3A99B7196E62DF009102A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA3A99B8196E62DF009102A1 /* Build configuration list for PBXNativeTarget "CerealTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +494,7 @@
 				AA3A99BA196E62DF009102A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
